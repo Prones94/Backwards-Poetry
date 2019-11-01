@@ -14,4 +14,11 @@ def lines_printed_backwards(poem):
         print(split_poem[len_poem])
         len_poem -= 1
 
+def print_index_number(poem):
+    split_poem = (poem.split("\n"))
+    for line_num in split_poem:
+        print(split_poem.index(line_num))
+
+# def print_random
 lines_printed_backwards(poem)
+print_index_number(poem)
