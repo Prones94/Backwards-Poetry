@@ -21,12 +21,19 @@ def lines_printed_random(split):
     random_poem = []
     num_lines = len(split)
     while num_lines >= 0:
+        line_num = 1
+        print(num_lines)
         rand_line = random.choice(split)
         random_poem.append(rand_line)
         for phrase in random_poem:
-            print({phrase})
+            print(f'This works')
             num_lines -= 1
+            print(num_lines)
+            line_num += 1
+            print(line_num)
 
+def rearrange_poem(split):
+    pass
 # def print_random
 # print(split_poem(poem))
 lines_printed_backwards(split)
