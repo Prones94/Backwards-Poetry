@@ -1,3 +1,4 @@
+import random
 # user_poem = input('Please enter your favorite poem. Poem should include original fomatting')
 poem = """If you are a dreamer, come in,
 If you are a dreamer, a wisher, a liar,
@@ -16,11 +17,11 @@ def lines_printed_backwards(split):
         print(f'{len_poem}, {phrase}')
         len_poem -= 1
     
-
-def print_index_number(poem):
-    split_poem = (poem.split("\n"))
-    for i, line_num in enumerate(split_poem, 1):
-        print(i, split_poem)
+def lines_printed_random(split):
+    random = []
+    num_lines = len(split)
+    if num_lines != 0:
+        rand_line = split.random
 
 # def print_random
 # print(split_poem(poem))
