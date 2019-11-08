@@ -10,6 +10,7 @@ Come in!"""
 split = poem.split("\n")
 
 def lines_printed_backwards(split):
+    '''This function allows us to use the split poem and reverse the entire poem, including its line numbers'''
     split.reverse()
     len_poem = len(split)
     for i in range(len(split)):
@@ -18,23 +19,24 @@ def lines_printed_backwards(split):
         len_poem -= 1
     
 def lines_printed_random(split):
+    '''This function will random choose lines from the poem and completely change the entire poem, maybe repeating or or not repeating the same line'''
     random_poem = []
     num_lines = len(split)
     while num_lines >= 0:
-        line_num = 1
-        print(num_lines)
         rand_line = random.choice(split)
         random_poem.append(rand_line)
         for phrase in random_poem:
-            print(f'This works')
+            print(f'{phrase}')
             num_lines -= 1
-            print(num_lines)
-            line_num += 1
-            print(line_num)
 
-def rearrange_poem(split):
-    pass
+def add_random_line(split):
+    '''This will add a random line from the given poem and add to the end of the poem'''
+    random_words = random.choice(split)
+    split.append(random_words)
+    print(split)
+
 # def print_random
 # print(split_poem(poem))
-lines_printed_backwards(split)
-lines_printed_random(split)
+# lines_printed_backwards(split)
+# lines_printed_random(split)
+add_random_line(split)
